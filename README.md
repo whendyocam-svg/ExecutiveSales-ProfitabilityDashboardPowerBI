@@ -75,7 +75,8 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
 
 
 ## KPIs
-![KPIs](imagenes/KPIS1.png)
+![KPIs](imagenes/KPIS2.png)
+![KPIs](imagenes/KPIS_1.png)
 ---
 
 ## Notas

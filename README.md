@@ -69,9 +69,9 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
 ---
 
 ## Vista Previa del Dashboard
-> *(Agregar aquí capturas del dashboard)*
+![Dashboard General](imagenes/Executive Overview.png)
+![Dashboard General](imagenes/Profitability.png)
 
----
 
 ---
 

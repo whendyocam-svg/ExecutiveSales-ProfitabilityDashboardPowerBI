@@ -73,6 +73,7 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
 ![Dashboard General](imagenes/Profitability.png)
 
 
+
 ---
 
 ## Notas

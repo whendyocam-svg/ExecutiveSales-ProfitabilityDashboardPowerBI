@@ -48,7 +48,7 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
 - **DAX** para cálculos y medidas
 - **Modelado de datos** (enfoque tipo estrella)
 - **Power Query** para limpieza y transformación de datos
-
+- **SQL(PosgreSQL) creación de bases de datos a través de un dataset extraido de la página Kaglee
 ---
 
 ## Consideraciones de Diseño

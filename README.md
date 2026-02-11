@@ -1,4 +1,4 @@
-# ExecutiveSales-ProfitabilityDashboardPowerBI
+# Executive_Sales_Profitability_Dashboard_Power_BI
 # Executive Sales & Profitability Dashboard | Power BI
 
 ## Descripción del Proyecto

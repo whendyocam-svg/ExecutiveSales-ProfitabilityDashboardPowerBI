@@ -50,10 +50,10 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
 
 ## Herramientas y Tecnologías
 - **Power BI Desktop**
-- **DAX** para cálculos y medidas
+- **DAX** para cálculos y medidas de KPIS e indicadores
 - **Modelado de datos** (enfoque tipo estrella)
 - **Power Query** para limpieza y transformación de datos
-- **SQL(PosgreSQL) creación de bases de datos a través de un dataset extraido de la página Kaglee
+- **SQL(PosgreSQL) Creación de tablas para modelado de datos tipo estrella a partir de un dataset extraido de la página Kaglee
 ---
 
 ## Consideraciones de Diseño
@@ -113,6 +113,56 @@ DIVIDE(
     [Sales Previous Year (KPI)]
 )
 
+## Sales Current Year (KPI) = 
+VAR _MaxDate = [Date Max]
+VAR _StartYear =
+    DATE(YEAR(_MaxDate),1, 1)
+RETURN
+CALCULATE(
+    [Total Sales],
+    dim_date[date] >= _StartYear,
+    dim_date[date] <= _MaxDate
+)
+
+## Sales Current Month (KPI) = 
+VAR _MaxDate = [Date Max]
+VAR _StartMonth =
+   DATE(YEAR(_MaxDate), MONTH(_MaxDate), 1)
+RETURN
+CALCULATE(
+    [Total Sales],
+    dim_date[date] >= _StartMonth,
+    dim_date[date] <= _MaxDate
+)
+
+## Sales Previous Month (KPI) = 
+VAR _MaxDate = [Date Max]
+VAR _StartPrevMonth =
+    DATE(YEAR(_MaxDate ), MONTH(_MaxDate ) - 1, 1)
+VAR _EndPrevMonth =
+    EOMONTH(_MaxDate , -1)
+RETURN
+CALCULATE(
+    [Total Sales],
+    dim_date[date] >= _StartPrevMonth,
+    dim_date[date] <= _EndPrevMonth
+)
+
+
+## Sales Previous Year (KPI) = 
+VAR _MaxDate = [Date Max]
+VAR _PrevYear =
+    YEAR(_MaxDate) - 1
+VAR _StartPrevYear =
+    DATE(_PrevYear, 1, 1)
+VAR _EndPrevYear =
+    DATE(_PrevYear, 12, 31)
+RETURN
+CALCULATE(
+    [Total Sales],
+    dim_date[date] >= _StartPrevYear,
+    dim_date[date] <= _EndPrevYear
+)
 
 
 

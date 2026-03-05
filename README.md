@@ -69,9 +69,9 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
 ---
 
 ## Vista Previa del Dashboard
-![Dashboard_General_1](imagenes/Executive_Overview.png)
+![Dashboard_General_1] (imagenes/imagen1_reporte.png)
 
-![Dashboard_General_2](imagenes/Profitability.png)
+![Dashboard_General_2](imagenes/imagen2_reporte.png)
 
 
 ## KPIs

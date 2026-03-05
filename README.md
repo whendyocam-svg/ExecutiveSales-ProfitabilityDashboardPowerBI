@@ -32,9 +32,9 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
     - Rojo: resultado negativo
     - Gris: sin variación
 
-    ![KPIs1](imagenes/KPIS_1_D.png)     
+    ![KPIs1](imagenes/KPI_1_D.png)     
     
-    ![KPIs2](imagenes/KPIS_2_D.png)
+    ![KPIs2](imagenes/KPI_2_D.png)
     
 - **Análisis Temporal**:
   - Tendencia de ventas a lo largo del tiempo

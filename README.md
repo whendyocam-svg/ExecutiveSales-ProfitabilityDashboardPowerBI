@@ -23,7 +23,7 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
   - Utilidad Total
   - Margen de Utilidad (%)
   
-![KPIs](imagenes/KPIS_1.png)
+![KPIs0](imagenes/KPIS_1.png)
 - **Indicadores de Desempeño**:
   - Variación MoM y YoY
   - Flechas direccionales (▲▼)
@@ -32,8 +32,9 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
     - Rojo: resultado negativo
     - Gris: sin variación
 
-    ![KPIs](imagenes/KPIS_1_D.png)
-    ![KPIs](imagenes/KPIS_2_D.png)
+    ![KPIs1](imagenes/KPIS_1_D.png)     
+    
+    ![KPIs2](imagenes/KPIS_2_D.png)
     
 - **Análisis Temporal**:
   - Tendencia de ventas a lo largo del tiempo

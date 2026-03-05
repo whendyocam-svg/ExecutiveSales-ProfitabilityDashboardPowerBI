@@ -32,9 +32,7 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
     - Rojo: resultado negativo
     - Gris: sin variación
 
-    ![KPIs1](imagenes/KPI_1_D.png)     
-    
-    ![KPIs2](imagenes/KPI_2_D.png)
+    ![KPIs1](imagenes/KPI_1_D.png)      ![KPIs2](imagenes/KPI_2_D.png)
     
 - **Análisis Temporal**:
   - Tendencia de ventas a lo largo del tiempo
@@ -81,8 +79,43 @@ El dashboard está pensado para **usuarios de negocio y tomadores de decisiones*
 
 
 ## KPIs
-![KPIs](imagenes/KPIS2.png)
-![KPIs](imagenes/KPIS_1.png)
+![KPIs0](imagenes/KPIS_1.png)
+![KPIs1](imagenes/KPI_1_D.png)     
+![KPIs2](imagenes/KPI_2_D.png)
+
+## Medidas Construidas con DAX
+
+## Total Sales = 
+   SUM(fact_sales[sales])
+## Total Profit = 
+   SUM(fact_sales[profit])
+   
+## MoM % Global (Indicador) = 
+CALCULATE(
+    [Sales MoM % (Indicador)],
+    REMOVEFILTERS(dim_date)
+)
+## YoY %  Global (Indicador) = 
+CALCULATE(
+    [Sales YoY % (Indicador)],
+    REMOVEFILTERS(dim_date)
+)
+
+## Sales MoM % (KPI) = 
+DIVIDE(
+    [Sales Current Month (KPI)] - [Sales Previous Month (KPI)],
+    [Sales Previous Month (KPI)]
+)
+
+## Sales YoY % (KPI) = 
+DIVIDE(
+    [Sales Current Year (KPI)] - [Sales Previous Year (KPI)],
+    [Sales Previous Year (KPI)]
+)
+
+
+
+
 ---
 
 ## Notas
